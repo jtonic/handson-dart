@@ -4,4 +4,4 @@
 ## Miscs
 .tmp/
 .idea/*
-
+.build/*

@@ -5,10 +5,11 @@ bool _isList() => _names is List<String>;
 int _sum(int a, int b) {return a + b;}
 
 void main() {
-  var foo = () {
+  // nested functions
+  foo() {
     print('Hello');
     return "aaa";
-  };
+  }
 
   var sum1 = _sum;
 

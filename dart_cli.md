@@ -15,9 +15,33 @@ dart run
 ```
 
 - a particular file
- 
+
 ```shell
 dart run playground/extension_main.dart
+```
+
+## Run tests
+
+```shell
+dart test
+```
+
+```shell
+dart test -r failures-only
+```
+
+```shell
+dart test --reporter=expanded
+```
+
+## Build targeting platforms
+
+```shell
+dart compile exe bin/handson_dart.dart --target-os=macos -o .build/app
+```
+
+```shell
+.build/app
 ```
 
 ## Dependencies
@@ -42,6 +66,12 @@ dart pub upgrade --major-versions
 
 ## Automatically fix the code lint issues
 
+- analyze the code
+
+```shell
+dart analyze .
+```
+
 -  dry-run
 ```shell
 dart fix --dry-run
@@ -50,18 +80,4 @@ dart fix --dry-run
 - actually fix the dart code issues
 ```shell
 dart fix 
-```
-
-## Run tests
-
-```shell
-dart test
-```
-
-```shell
-dart test -r failures-only
-```
-
-```shell
-dart test --reporter=expanded
 ```
