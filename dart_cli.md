@@ -6,10 +6,18 @@
  dart create -t console cli
 ```
 
-## Run the application 
+## Run
+
+- the application 
 
 ```shell
 dart run
+```
+
+- a particular file
+ 
+```shell
+dart run playground/extension_main.dart
 ```
 
 ## Dependencies
