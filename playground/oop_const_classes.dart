@@ -1,40 +1,20 @@
 void main() {
-  var a = const ImmutablePoint(1, 1);
-  var b = const ImmutablePoint(1, 1);
-  print("x: ${a.x}");
-  assert(identical(a, b)); // They are the same instance!
-  assert(a.x == 1);
-
-  final babyTony = Person.baby("Tony");
-  assert(babyTony.age == 0);
-  print("Baby Tony: $babyTony");
-
-  final unknownBaby = Person.unknownBaby();
-  print('unknown baby = $unknownBaby');
+  print('Origin: ${Point.origin()}');
+  print('On X axe: ${Point.onX(20)}');
+  print('10, 20: ${Point(10, 20)}');
 }
 
-class ImmutablePoint {
-  final int x;
-  final int y;
+class Point {
+  final int x, y;
 
-  const ImmutablePoint(this.x, this.y);
+  const Point(this.x, this.y);
+  const Point.onX(int x) : this(x, 0);
+  const Point.origin()
+      : x = 0,
+      y = 0;
 
   @override
   String toString() {
-    return 'ImmutablePoint{x: $x, y: $y}';
-  }
-}
-
-class Person {
-  final String name;
-  final int age;
-
-  const Person(this.name, this.age);
-  const Person.baby(this.name) : age = 0;
-  const Person.unknownBaby(): name = "unknown", age = 0;
-
-  @override
-  String toString() {
-    return 'Person{name: $name, age: $age}';
+    return 'Point {x: $x, y: $y}';
   }
 }

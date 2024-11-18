@@ -5,7 +5,7 @@
 
 ## OOP
 - [x] const classes
-- [ ] constructor
+- [x] constructor
 - [ ] [factory](https://dart.dev/resources/dart-cheatsheet#factory-constructors)
 - [ ] singleton
 - [ ] properties
