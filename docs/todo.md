@@ -10,7 +10,7 @@
 - [ ] properties
 - [ ] Operator overloaded
 - [ ] Extension operator overloaded
-- [ ] Multi line string interpolation
+- [x] Multi line string interpolation
 - [ ] Records
 - [ ] Records conversion
 - [ ] covariance contravariance invariance
