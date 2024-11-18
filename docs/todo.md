@@ -4,6 +4,7 @@
 
 
 ## OOP
+- [x] const classes
 - [ ] constructor
 - [ ] [factory](https://dart.dev/resources/dart-cheatsheet#factory-constructors)
 - [ ] singleton
@@ -32,7 +33,7 @@
 - [ ] Function composition
 - [ ] Partially applied
 - [ ] Pattern match
-- [ ] Immutability (final vs var)
+- [x] Immutability (final vs var)
 
 ## Build and publish
 
